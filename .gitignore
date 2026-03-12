@@ -1,0 +1,6 @@
+.env
+.git
+*.pyc
+__pycache__/
+*.log
+doit.db

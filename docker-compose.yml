@@ -1,0 +1,20 @@
+version: '3'
+services:
+  snaplink:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+    environment:
+      - DATABASE_URL=sqlite:///snaplink.db
+    volumes:
+      - ./app:/app
+      - ./database:/database
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  database:
+    image: busybox
+    volumes:
+      - ./database:/database
+    command: true

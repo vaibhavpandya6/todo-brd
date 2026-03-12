@@ -1,0 +1,10 @@
+-- Database schema to be created using the following SQL query:
+-- CREATE TABLE urls (
+--     id INTEGER PRIMARY KEY,
+--     original_url TEXT NOT NULL,
+--     short_code TEXT UNIQUE NOT NULL,
+--     date_created DATETIME DEFAULT CURRENT_TIMESTAMP,
+--     click_count INTEGER DEFAULT 0
+-- );
+
+-- To create the database schema, run the above SQL query in a SQLite client like DB Browser for SQLite or using the sqlite3 command-line tool.
